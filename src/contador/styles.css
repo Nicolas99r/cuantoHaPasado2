@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(0, 15, 46);
+}
+
+.days h1 {
+    position: relative;
+    max-width: 700px;
+    display: block;
+    color: beige;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    font-size: 0.8em;
+}
+
+.days .time {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.days .time div {
+    position: relative;
+    margin: 0 5px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+}
+
+.days .time div span {
+    position: relative;
+    display: block;
+    min-width: 90px;
+    height: 80px;
+    background-color: rgb(204, 204, 0);
+    color: #fff;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    z-index: 10;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+.days .time div span:nth-child(2) {
+    background: rgb(167, 167, 1);
+    height: 30px;
+    font-size: 0.7em;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+    z-index: 9;
+    box-shadow: none;
+    text-transform: uppercase;
+}
+
+.days .time div:nth-child(2) span {
+    background: blue;
+}
+
+.days .time div:last-child span:nth-child(2) {
+    background: rgb(0, 0, 201);
+}
+
+.days .time div:last-child span {
+    background: red;
+}
+
+.days .time div:last-child span:nth-child(2) {
+    background: rgb(206, 0, 0);
+}
